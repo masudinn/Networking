@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, Image, StyleSheet, FlatList} from 'react-native';
 
-export default function GetUser(){
+export default function Get1() {
   const [data, setData] = useState([]);
 
   const getDataApi = async () => {
@@ -42,8 +42,7 @@ export default function GetUser(){
       />
     </View>
   );
-};
-
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -60,4 +59,3 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
 });
-

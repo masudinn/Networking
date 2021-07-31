@@ -1,15 +1,12 @@
-import React, {useState, useEffect} from 'react';
-import {StyleSheet, Text, View, FlatList, Image} from 'react-native';
-import Get from './page/Get';
-import Post from './page/post';
+import React from 'react';
+import {View} from 'react-native';
+import Stack from './page/Route';
+import {NavigationContainer} from '@react-navigation/native';
 
-const App = () => {
+export default function App() {
   return (
-    <View>
-      {/* <Get /> */}
-      <Post />
-    </View>
+    <NavigationContainer>
+      <Stack />
+    </NavigationContainer>
   );
-};
-
-export default App;
+}

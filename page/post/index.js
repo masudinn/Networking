@@ -38,6 +38,7 @@ export default function Post() {
       .then(response => {
         setLoading(false);
         response.text();
+        navigation.push('Get');
       })
       .then(result => console.log(result))
       .catch(error => console.log(error));
